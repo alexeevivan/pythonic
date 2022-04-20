@@ -1,0 +1,47 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    margin: 0px;
+    width: auto;
+    height: 100vh;
+}
+
+#one, #two, #three, #four {
+    position: fixed;
+    border: 5px solid;
+    margin: 5px;
+    padding: 5px;
+    width: 25%;
+}
+#one, #two {
+    right: 0;
+}
+#three, #four {
+    left: 0;
+}
+#one {
+    border-color: #0000FF;
+    bottom: calc(25% - 5em);
+}
+#two {
+    border-color: #027F00;
+}
+#three {
+    border-color: #FFA503;
+}
+#four {
+    border-color: #FFFF05;
+    bottom: calc(25% - 5em);
+}
+#link {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 5px;
+}
+#link a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #FEFEFE;
+    background-color: #4460D0;
+}
