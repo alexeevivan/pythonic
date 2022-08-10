@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <!--Кодировка-->
+        <meta charset="UTF-8">
+        <!--Адаптивность. User-scalable=0 запрещает зумить на Android-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!--Краткое описание страницы для поисковых плтаформ (до 140 символов)-->
+        <meta name="description" content="">
+        <!--Ключевые слова для поисковых платформ (до 20 слов через запятую)-->
+        <meta name="keywords" content="">
+        <!--Мета теги в случае репоста страницы сайта на Facebook-->
+        <!--Локализация сайта. Для русскоязычного сайта - ru_RU-->
+        <meta property="og:locale" content="ru_RU">
+        <meta property="og:type" content="aticle">
+        <!--Какой заголовок сайта при репосте-->
+        <meta proprety="og:title" content="">
+        <!--Описания страницы при репосте-->
+        <meta property="og:descritpion" content="">
+        <!--Ссылка на изображение, которое выводится при репосте (http-адрес нужно будет вставить с изображением)-->
+        <meta property="og:image" content="">
+        <!--Ссылка на конкретную страницу (тоже http-адрес указать для каждой страницы)-->
+        <meta property="og:url" content="">
+        <!--Название сайта при репосте-->
+        <meta property="og:site_name" content="F&B Cartel">
+        <!--Разрешение или запрет номер телефона делать ссылкой на звонок в iOS-->
+        <meta name="format-detection" content="telephone=yes">
+        <!--Данные о владельце/авторе страницы-->
+        <meta name="Author" content="Alexeev Ivan">
+        <meta name="Copyright" content="Alexeev Ivan">
+        <meta name="Address" content="">
+
+        <!--Эту строчку добавить только на страницу 404 - она позволяет выполнить редирект на главную, если вылезла 404-->
+        <!--<meta http-equiv="refresh" content="3, url=index.html"-->
+        
+
+        <link rel="stylesheet" href="../../static/css/style.css">
+        <link rel="stylesheet" href="../../static/css/modal.css">
+        <link rel="stylesheet" href="../../static/css/slider.css">
+        <link rel="stylesheet" href="../../static/css/fonts.css">
+
+        <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon.ico">
+        <link rel="icon" sizes="128x128" href="img/favicon.ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+
+        <title>
+            Bartending School
+        </title>
+    </head>
+    <body>
+        <div class="header" id="myHeader">
+            <ul>
+                <li>
+                    <a href="{% url 'index' %}">
+                        <span>
+                            Главная
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'course' %}">
+                        <span>
+                            Курсы
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            О нас
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            Вопрос - ответ
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            Аккаунт
+                        </span>
+                    </a>
+                </li>
+                <li class="call_number">
+                    <a href="tel:+375-44-7506008" class="call_number">
+                        <span>
+                            + 375 (44) 750 - 60 - 08
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="wrapper card1">
+                <div class="carousel">
+                    <div class="carousel__nav">
+                        <span id="moveLeft" class="carousel__arrow">
+                            <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                            </svg>
+                        </span>
+                        <span id="moveRight" class="carousel__arrow" >
+                            <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                            </svg>    
+                        </span>
+                    </div>
+                    <div class="carousel-item carousel-item--1">
+                        <div class="carousel-item__image"></div>
+                        <div class="carousel-item__info">
+                            <div class="carousel-item__container">
+                                <h2 class="carousel-item__subtitle">
+                                    Тренинг-центр
+                                </h2>
+                                <h1 class="carousel-item__title">
+                                    JEL'SA
+                                </h1>
+                                <p class="carousel-item__description">
+                                    Профессионально обустроенный центр обучения:<br>познайте все тонкости барного ремесла в действующем заведении Премиум-класса <br>в сердце Минска
+                                </p>
+                                <div class="box">
+                                    <span></span>
+                                    <span></span>
+                                    <a href="#" class="carousel-item__btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 12l-20 12 7.289-12-7.289-12z"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item--2">
+                        <div class="carousel-item__image"></div>
+                        <div class="carousel-item__info">
+                            <div class="carousel-item__container">
+                                <h2 class="carousel-item__subtitle">
+                                    Доступная
+                                </h2>
+                                <h1 class="carousel-item__title">
+                                    Цена
+                                </h1>
+                                <p class="carousel-item__description">
+                                    Во всём мире не существует логического объяснения причин, по которым кто-либо вправе создавать препятствия для обучения высокой <br>стоимостью курсов
+                                </p>
+                                <div class="box">
+                                    <span></span>
+                                    <span></span>
+                                    <a href="#" class="carousel-item__btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 12l-20 12 7.289-12-7.289-12z"/></svg>
+                                    </a>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item--3">
+                        <div class="carousel-item__image"></div>
+                        <div class="carousel-item__info">
+                            <div class="carousel-item__container">
+                                <h2 class="carousel-item__subtitle">
+                                    Эксклюзивный
+                                </h2>
+                                <h1 class="carousel-item__title">
+                                    Стиль
+                                </h1>
+                                <p class="carousel-item__description">
+                                    Ограниченное количество студентов в одной группе позволяет применять индивидуальный подход к теоретическому и практическому обучению в полной мере
+                                </p>
+                                <div class="box">
+                                    <span></span>
+                                    <span></span>
+                                    <a href="#" class="carousel-item__btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 12l-20 12 7.289-12-7.289-12z"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+            <div class="wrapper card2">
+                <div class="logo">
+                    <h1>
+                        Food &amp; Beverages Cartel
+                    </h1>
+                    <h3>
+                        Bartending School
+                    </h3>
+                    <img src="../../static/img/Logo_curved_blue.png" height="210" width="215">
+                </div>
+            </div>
+        </div>
+        <div class="container_main">
+
+        </div>
+        <div class="modal fade" id="myModal" data-backdrop="false" data-dismiss="modal" keyboard="false">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">
+                            Добро пожаловать на официальный сайт F&amp;B Cartel Bartending School
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <hr>
+                        <h4>Подтверждение возраста</h4>
+                        <hr>
+                        <p>Сайт содержит информацию для лиц совершеннолетнего возраста. Сведения, размещенные на сайте, не являются рекламой, носят исключительно информационный характер, и предназначены только для личного использования.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <span class="closeBtn">
+                            Я достиг совершеннолетия в своей стране
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>
+                Лицензия © 2022 "Вокал Индастрит" ООО. Все права защищены.
+            </p>
+        </footer>
+
+        <script src="../../static/vendor/jquery/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        <script src="../../static/js/slider.js"></script>
+        <script src="../../static/js/navbar.js"></script>
+        <script src="../../static/js/modal.js"></script>
+    </body>
+
+</html>
