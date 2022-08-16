@@ -46,5 +46,6 @@ function myFunc() {
       } else {
         nav.style.height = "100%";
         nav.style.opacity = 1;
+        nav.style.display = 'flex';
       }
 };
