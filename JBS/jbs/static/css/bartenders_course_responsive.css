@@ -1733,12 +1733,12 @@
             font-family: Lora, serif;
         }
         .title {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-family: 'SF Pro Display';
             line-height: 1.1;
             font-weight: 300;
             color: #64506A;
-            margin: 4rem auto 1rem;
+            margin: 1rem auto 1rem;
             width: 85%;
             max-width: 1280px;
         }
@@ -1797,7 +1797,8 @@
         .slider__info__main ul li {
             font-family: 'SF Pro Display';
             color: rgb(255, 255, 255);
-            font-size: 0.8em;
+            font-size: 1em;
+            line-height: 1.8em;
         }
         .ul_additional {
             margin-left: 10%;
@@ -4148,12 +4149,12 @@
             font-family: Lora, serif;
         }
         .title {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-family: 'SF Pro Display';
             line-height: 1.1;
             font-weight: 300;
             color: #64506A;
-            margin: 4rem auto 1rem;
+            margin: 1rem auto 1rem;
             width: 85%;
             max-width: 1280px;
         }
@@ -4212,7 +4213,8 @@
         .slider__info__main ul li {
             font-family: 'SF Pro Display';
             color: rgb(255, 255, 255);
-            font-size: 0.8em;
+            font-size: 1em;
+            line-height: 1.8em;
         }
         .ul_additional {
             margin-left: 10%;

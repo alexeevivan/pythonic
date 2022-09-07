@@ -148,7 +148,7 @@
 .carousel__nav {
     position: absolute;
     right: 0;
-    z-index: 2;
+    z-index: 5;
     background-color: #f1faee;
     bottom: 0;
     border-top-left-radius: 10px;
